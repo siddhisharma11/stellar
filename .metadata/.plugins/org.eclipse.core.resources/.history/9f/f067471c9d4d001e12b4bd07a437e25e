@@ -1,0 +1,50 @@
+package com.hsbc.meetingroombookingsystem.domain;
+
+public abstract class User {
+	private String uniqueID;
+	private String name;
+	private String email;
+	private String phone;
+	private String credits;
+	private Role role;
+	
+	public String getUniqueID() {
+		return uniqueID;
+	}
+	public void setUniqueID(String uniqueID) {
+		this.uniqueID = uniqueID;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getCredits() {
+		return credits;
+	}
+	public void setCredits(String credits) {
+		this.credits = credits;
+	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	
+	
+
+}

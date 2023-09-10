@@ -1,0 +1,5 @@
+package com.hsbc.meetingroombookingsystem.domain;
+
+public class Role {
+
+}

@@ -1,0 +1,19 @@
+package com.hsbc.meetingroombookingsystem.domain;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+
+public class Meeting {
+	private int uniqueID;
+	private String title;
+	private User user;
+	private LocalDate meetingDate;
+	private LocalTime startTime;
+	private LocalTime endTime;
+	private Meeting typeOfMeeting;
+	private List<Member> attendies;
+	private MeetingRoom meetingRoom;
+	
+
+}

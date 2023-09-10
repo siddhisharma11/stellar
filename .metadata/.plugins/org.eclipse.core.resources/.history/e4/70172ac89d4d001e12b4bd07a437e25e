@@ -1,0 +1,6 @@
+package com.hsbc.meetingroombookingsystem.domain;
+
+public class Admin extends User {
+	
+	
+}
