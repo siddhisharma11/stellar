@@ -1,0 +1,12 @@
+package com.hsbc.meetingroombookingsystem.DAO;
+
+import com.hsbc.meetingroombookingsystem.domain.MeetingRoom;
+
+public class MeetingRoomDAO {
+
+	public void newmeetingroom(MeetingRoom newmeetingroom) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

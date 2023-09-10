@@ -1,0 +1,21 @@
+package com.hsbc.meetingroombookingsystem.service;
+
+import com.hsbc.meetingroombookingsystem.DAO.AmenitiesDAO;
+import com.hsbc.meetingroombookingsystem.domain.Amenities;
+import com.hsbc.meetingroombookingsystem.exceptions.AmenitiesAlreadyExistsException;
+import com.hsbc.meetingroombookingsystem.objectFactory.AmenitiesDAOObject;
+
+public class CreateNewAmenitiesImpl implements CreateNewAmenities{
+
+	@Override
+	public void newAmenity(String id, String name) {
+		AmenitiesDAO dao = AmenitiesDAOObject.getInstanceof();
+		Amenities a = new Amenities();
+		try {
+		dao.newamenity(a.setId(id),a.setName(name));
+	}catch(Exception e) {
+		throw new AmenitiesAlreadyExistsException("Amenity already Exists !!!");
+	}
+	}
+	
+}

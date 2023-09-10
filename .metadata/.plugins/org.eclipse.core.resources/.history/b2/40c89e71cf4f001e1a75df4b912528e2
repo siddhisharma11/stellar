@@ -1,0 +1,11 @@
+package com.hsbc.meetingroombookingsystem.objectFactory;
+
+import com.hsbc.meetingroombookingsystem.domain.Amenities;
+
+public class AmenitiesDAOObject {
+	
+	public static void getInstanceOf(Amenities newAmenity) {
+		AmenitiesDao
+	}
+
+}

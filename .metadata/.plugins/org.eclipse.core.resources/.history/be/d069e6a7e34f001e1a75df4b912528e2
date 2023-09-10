@@ -1,0 +1,10 @@
+package com.hsbc.meetingroombookingsystem.service;
+
+public class NewMeetingServiceImpl implements NewMeetingService{
+
+	@Override
+	public void newMeeting() {
+		
+	}
+
+}

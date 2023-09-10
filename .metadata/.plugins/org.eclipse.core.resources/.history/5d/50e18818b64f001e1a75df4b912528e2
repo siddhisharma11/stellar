@@ -1,0 +1,9 @@
+package com.hsbc.meetingroombookingsystem.exceptions;
+
+
+public class AmenitiesAlreadyExistsException extends Exception {
+	public  void exception(String s) {
+		System.out.println("Amenity already Exists !!!");
+	}
+
+}

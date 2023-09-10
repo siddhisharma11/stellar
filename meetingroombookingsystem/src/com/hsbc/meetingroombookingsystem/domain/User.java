@@ -33,14 +33,28 @@ public abstract class User {
 		return Objects.equals(email, other.email) && Objects.equals(phone, other.phone)
 				&& Objects.equals(uniqueID, other.uniqueID);
 	}
-	public User(String uniqueID, String name, String email, String phone, int credits, Role role) {
-		this.uniqueID = uniqueID;
+	
+	public User(String id, String name, String email, String phone) {
+		this.uniqueID = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
-		this.credits = credits;
-		this.role = role;
 	}
+	
+	public User(String id, String name2, String email2, String phone2, Role role) {
+		this.uniqueID = id;
+		this.name = name2;
+		this.email = email2;
+		this.phone = phone2;
+	}
+	public User(String id, String name2, String email2, String phone2, int credits2, Role role) {
+		this.uniqueID = id;
+		this.name = name2;
+		this.email = email2;
+		this.phone = phone2;
+		this.credits = credits2;
+	}// TODO Auto-generated constructor stub
+	
 	public String getUniqueID() {
 		return uniqueID;
 	}

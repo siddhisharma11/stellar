@@ -1,0 +1,9 @@
+package com.hsbc.meetingroombookingsystem.DAO;
+
+public class AmenitiesDAO {
+	
+	public void newAmenity(String id,String name) {
+		
+	}
+
+}

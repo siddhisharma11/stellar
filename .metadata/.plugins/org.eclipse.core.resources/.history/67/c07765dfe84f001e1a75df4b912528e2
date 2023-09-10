@@ -1,0 +1,8 @@
+package com.hsbc.meetingroombookingsystem.exceptions;
+
+public class MeetingAlreadyExistsException extends Exception {
+	public  void exception(String message) { 
+		System.out.println("Meeting already Exists !!!");
+	}
+
+}

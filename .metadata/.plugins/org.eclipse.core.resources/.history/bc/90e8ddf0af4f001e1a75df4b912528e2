@@ -1,0 +1,5 @@
+package com.hsbc.meetingroombookingsystem.objectFactory;
+
+public class MeetingObject {
+
+}

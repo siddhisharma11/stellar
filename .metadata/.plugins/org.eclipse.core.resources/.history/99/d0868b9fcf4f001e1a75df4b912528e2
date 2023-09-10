@@ -1,0 +1,12 @@
+package com.hsbc.meetingroombookingsystem.DAO;
+
+import com.hsbc.meetingroombookingsystem.domain.Amenities;
+
+public class AmenitiesDAO {
+	private Amenities newAmenity;
+	
+	public void AmenitiesDAO(Amenities newAmenity) {
+		this.newAmenity = newAmenity;
+	}
+
+}

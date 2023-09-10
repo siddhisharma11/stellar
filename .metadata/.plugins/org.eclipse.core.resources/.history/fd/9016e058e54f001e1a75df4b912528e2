@@ -1,0 +1,16 @@
+package com.hsbc.meetingroombookingsystem.service;
+
+import java.lang.reflect.Member;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+
+import com.hsbc.meetingroombookingsystem.domain.Meeting;
+import com.hsbc.meetingroombookingsystem.domain.User;
+import com.hsbc.meetingroombookingsystem.exceptions.MeetingAlreadyExistsException;
+
+public interface NewMeetingService {
+	
+	public void newMeeting(int uniqueID,String title,User user,LocalDate meetingDate,LocalTime startTime,LocalTime endTime,Meeting typeOfMeeting,List<Member> attendies) throws MeetingAlreadyExistsException;;
+
+}

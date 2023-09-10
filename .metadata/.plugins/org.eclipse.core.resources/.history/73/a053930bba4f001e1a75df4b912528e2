@@ -1,0 +1,11 @@
+package com.hsbc.meetingroombookingsystem.exceptions;
+
+
+public class AmenitiesAlreadyExistsException extends Exception {
+	private String message="AmenitiesAlreadyExistsException";
+
+	public String getmeesage() {
+		return message;
+	}	
+
+}

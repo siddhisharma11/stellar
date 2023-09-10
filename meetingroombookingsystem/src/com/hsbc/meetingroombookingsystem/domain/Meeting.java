@@ -13,10 +13,27 @@ public class Meeting {
 	private LocalTime startTime;
 	private LocalTime endTime;
 	private Meeting typeOfMeeting;
-	private List<Member> attendies;
+	private List<Members> attendies;
 	
 	
+	public Meeting() {
+		
+	}
 	
+	public Meeting(int uniqueID, String title, User user, LocalDate meetingDate, LocalTime startTime, LocalTime endTime,
+			Meeting typeOfMeeting, List<Members> attendies, MeetingRoom meetingRoom) {
+		this.uniqueID = uniqueID;
+		this.title = title;
+		this.user = user;
+		this.meetingDate = meetingDate;
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.typeOfMeeting = typeOfMeeting;
+		this.attendies = attendies;
+		this.meetingRoom = meetingRoom;
+	}
+	
+
 	@Override
 	public String toString() {
 		return "Meeting [uniqueID=" + uniqueID + ", title=" + title + ", user=" + user + ", meetingDate=" + meetingDate
@@ -81,10 +98,10 @@ public class Meeting {
 	public void setTypeOfMeeting(Meeting typeOfMeeting) {
 		this.typeOfMeeting = typeOfMeeting;
 	}
-	public List<Member> getAttendies() {
+	public List<Members> getAttendies() {
 		return attendies;
 	}
-	public void setAttendies(List<Member> attendies) {
+	public void setAttendies(List<Members> attendies) {
 		this.attendies = attendies;
 	}
 	public MeetingRoom getMeetingRoom() {

@@ -1,0 +1,9 @@
+package com.hsbc.meetingroombookingsystem.DAO;
+
+public class MeetingDAO {
+	
+	public static void newmeeting() {
+		
+	}
+
+}

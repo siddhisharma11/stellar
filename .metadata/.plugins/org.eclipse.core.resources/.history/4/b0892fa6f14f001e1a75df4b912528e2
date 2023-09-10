@@ -1,0 +1,28 @@
+package com.hsbc.meetingroombookingsystem.service;
+
+import com.hsbc.meetingroombookingsystem.domain.Role;
+
+public class CreateUserServiceImpl implements CreateUserService {
+
+	@Override
+	public void newManager(String uniqueID, String name, String email, String phone, int credits, Role role) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void newAdmin(String uniqueID, String name, String email, String phone) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void newMember(String id, String name, String email, String phone, Role role) {
+		// TODO Auto-generated method stub
+		
+	}
+
+		
+	}
+
+

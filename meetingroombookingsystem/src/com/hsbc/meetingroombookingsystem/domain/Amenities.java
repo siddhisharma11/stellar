@@ -8,6 +8,10 @@ public class Amenities {
 	
 	
 	
+	public Amenities(String id,String name) {
+		this.id = id;
+		this.name = name;
+	}
 	public String getId() {
 		return id;
 	}

@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.service.CreateNewAmenities"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.DAO.RoleDAO"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.exceptions.AmenitiesAlreadyExistsException"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.objectFactory.AmenitiesDAOObject"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.exceptions.LogInException"/>
+    <fullyQualifiedTypeName name="javax.security.auth.login.LoginException"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.service.NewMeetingRoomService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Amenities"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.DAO.AmenitiesDAO"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.DAO.MeetingRoomDAO"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.exceptions.MeetingRoomAlreadyExistsException"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.MeetingRoom"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Members"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.objectFactory.MeetingRoomDAOObject"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.DAO.MeetingDAO"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.objectFactory.MeetingObject"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Meeting"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.exceptions.MeetingAlreadyExistsException"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Role"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.User"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Manager"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.domain.Admin"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.DAO.UserDAO"/>
+    <fullyQualifiedTypeName name="com.hsbc.meetingroombookingsystem.objectFactory.UserDAOObject"/>
 </qualifiedTypeNameHistroy>

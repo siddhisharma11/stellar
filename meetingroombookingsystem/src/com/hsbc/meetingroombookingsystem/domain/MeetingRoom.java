@@ -10,8 +10,19 @@ public class MeetingRoom {
 	private List<Amenities> amenitiesAvailable;
 	private int cost;
 	
+	public MeetingRoom() {
+		
+	}
 	
-	
+	public MeetingRoom(String uniqueName, int seatingCapacity, int rating, List<Amenities> amenitiesAvailable,
+			int cost) {
+		super();
+		this.uniqueName = uniqueName;
+		this.seatingCapacity = seatingCapacity;
+		this.rating = rating;
+		this.amenitiesAvailable = amenitiesAvailable;
+		this.cost = cost;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(uniqueName);

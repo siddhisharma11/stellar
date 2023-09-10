@@ -1,0 +1,7 @@
+package com.hsbc.meetingroombookingsystem.objectFactory;
+
+public class AmenitiyDAOObject {
+	
+	public static void getInstanceof(Amenity)
+
+}

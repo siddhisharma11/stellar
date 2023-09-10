@@ -1,0 +1,11 @@
+package com.hsbc.meetingroombookingsystem.DAO;
+
+import com.hsbc.meetingroombookingsystem.domain.Amenities;
+
+public class MeetingDAO {
+	
+	public static Amenities getbyId(String id) {
+		
+	}
+
+}
