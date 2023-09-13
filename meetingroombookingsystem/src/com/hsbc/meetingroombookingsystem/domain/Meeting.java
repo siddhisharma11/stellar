@@ -13,7 +13,7 @@ public class Meeting {
 	private LocalTime startTime;
 	private LocalTime endTime;
 	private Meeting typeOfMeeting;
-	private List<Members> attendies;
+	private List<User> attendies;
 	
 	
 	public Meeting() {
@@ -21,7 +21,7 @@ public class Meeting {
 	}
 	
 	public Meeting(int uniqueID, String title, User user, LocalDate meetingDate, LocalTime startTime, LocalTime endTime,
-			Meeting typeOfMeeting, List<Members> attendies, MeetingRoom meetingRoom) {
+			Meeting typeOfMeeting, List<User> attendies, MeetingRoom meetingRoom) {
 		this.uniqueID = uniqueID;
 		this.title = title;
 		this.user = user;
@@ -98,10 +98,10 @@ public class Meeting {
 	public void setTypeOfMeeting(Meeting typeOfMeeting) {
 		this.typeOfMeeting = typeOfMeeting;
 	}
-	public List<Members> getAttendies() {
+	public List<User> getAttendies() {
 		return attendies;
 	}
-	public void setAttendies(List<Members> attendies) {
+	public void setAttendies(List<User> attendies) {
 		this.attendies = attendies;
 	}
 	public MeetingRoom getMeetingRoom() {

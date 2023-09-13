@@ -16,7 +16,7 @@ public class MeetingRoom {
 	
 	public MeetingRoom(String uniqueName, int seatingCapacity, int rating, List<Amenities> amenitiesAvailable,
 			int cost) {
-		super();
+	
 		this.uniqueName = uniqueName;
 		this.seatingCapacity = seatingCapacity;
 		this.rating = rating;

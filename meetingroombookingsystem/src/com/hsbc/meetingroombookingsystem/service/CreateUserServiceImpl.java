@@ -11,7 +11,7 @@ import com.hsbc.meetingroombookingsystem.objectFactory.UserDAOObject;
 public class CreateUserServiceImpl implements CreateUserService {
 
 	@Override
-	public void newManager(String uniqueID, String name, String email, String phone, int credits, Role role) {
+	public void newManager(int uniqueID, String name, String email, String phone, int credits, Role role) {
 		User newmanager = new Manager(uniqueID,name,email,phone,credits,role);
 		UserDAO object = UserDAOObject.getInstanceOf();
 		object.addnewManager(newmanager);
@@ -19,7 +19,7 @@ public class CreateUserServiceImpl implements CreateUserService {
 	}
 
 	@Override
-	public void newAdmin(String uniqueID, String name, String email, String phone) {
+	public void newAdmin(int uniqueID, String name, String email, String phone) {
 		User newadmin = new Admin(uniqueID,name,email,phone);
 		UserDAO object = UserDAOObject.getInstanceOf();
 		object.addnewAdmin(newadmin);// TODO Auto-generated method stub
@@ -27,7 +27,7 @@ public class CreateUserServiceImpl implements CreateUserService {
 	}
 
 	@Override
-	public void newMember(String id, String name, String email, String phone, Role role) {
+	public void newMember(int id, String name, String email, String phone, Role role) {
 		User newmember = new Members(id,name,email,phone, role);
 		UserDAO object = UserDAOObject.getInstanceOf();
 		object.addnewMember(newmember);// TODO Auto-generated method stub

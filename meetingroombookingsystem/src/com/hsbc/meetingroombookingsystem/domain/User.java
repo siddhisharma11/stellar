@@ -3,7 +3,7 @@ package com.hsbc.meetingroombookingsystem.domain;
 import java.util.Objects;
 
 public abstract class User {
-	private String uniqueID;
+	private int uniqueID;
 	private String name;
 	private String email;
 	private String phone;
@@ -34,20 +34,20 @@ public abstract class User {
 				&& Objects.equals(uniqueID, other.uniqueID);
 	}
 	
-	public User(String id, String name, String email, String phone) {
+	public User(int id, String name, String email, String phone) {
 		this.uniqueID = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 	}
 	
-	public User(String id, String name2, String email2, String phone2, Role role) {
+	public User(int id, String name2, String email2, String phone2, Role role) {
 		this.uniqueID = id;
 		this.name = name2;
 		this.email = email2;
 		this.phone = phone2;
 	}
-	public User(String id, String name2, String email2, String phone2, int credits2, Role role) {
+	public User(int id, String name2, String email2, String phone2, int credits2, Role role) {
 		this.uniqueID = id;
 		this.name = name2;
 		this.email = email2;
@@ -55,10 +55,10 @@ public abstract class User {
 		this.credits = credits2;
 	}// TODO Auto-generated constructor stub
 	
-	public String getUniqueID() {
+	public int getUniqueID() {
 		return uniqueID;
 	}
-	public void setUniqueID(String uniqueID) {
+	public void setUniqueID(int uniqueID) {
 		this.uniqueID = uniqueID;
 	}
 	public String getName() {

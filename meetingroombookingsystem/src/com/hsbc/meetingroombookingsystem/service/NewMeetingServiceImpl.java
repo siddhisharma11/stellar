@@ -16,10 +16,8 @@ public class NewMeetingServiceImpl implements NewMeetingService{
 
 	@Override
 	public void newMeeting(int uniqueID, String title, User user, LocalDate meetingDate, LocalTime startTime,
-			LocalTime endTime, Meeting typeOfMeeting, List<Members> attendies,MeetingRoom meetingRoom) throws MeetingAlreadyExistsException {
-		
+			LocalTime endTime, Meeting typeOfMeeting, List<User> attendies,MeetingRoom meetingRoom) throws MeetingAlreadyExistsException {
 		Meeting newmeeting = new Meeting(uniqueID,title,user,meetingDate,startTime,endTime,typeOfMeeting,attendies,meetingRoom);
-		
 		MeetingDAO newmeet = MeetingObject.getInstanceof();
 		newmeet.newmeeting(newmeeting);
 	}

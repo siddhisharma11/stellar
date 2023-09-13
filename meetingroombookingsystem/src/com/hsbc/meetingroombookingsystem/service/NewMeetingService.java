@@ -12,7 +12,7 @@ import com.hsbc.meetingroombookingsystem.exceptions.MeetingAlreadyExistsExceptio
 
 public interface NewMeetingService {
 	
-	public void newMeeting(int uniqueID,String title,User user,LocalDate meetingDate,LocalTime startTime,LocalTime endTime,Meeting typeOfMeeting,List<Members> attendies,MeetingRoom meetingroom) throws MeetingAlreadyExistsException;
+	public void newMeeting(int uniqueID,String title,User user,LocalDate meetingDate,LocalTime startTime,LocalTime endTime,Meeting typeOfMeeting,List<User> attendies,MeetingRoom meetingroom) throws MeetingAlreadyExistsException;
 
 	
 

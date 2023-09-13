@@ -3,31 +3,26 @@ package com.hsbc.meetingroombookingsystem.domain;
 import java.util.Objects;
 
 public class Amenities {
-	private String id;
+	
 	private String name;
-	
-	
-	
-	public Amenities(String id,String name) {
-		this.id = id;
+
+	public Amenities(String name) {
 		this.name = name;
 	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(name);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -40,5 +35,5 @@ public class Amenities {
 		return Objects.equals(name, other.name);
 	}
 	
-
+	
 }
