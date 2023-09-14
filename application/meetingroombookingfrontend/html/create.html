@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home_page_screen">
+        <div class="navbar">
+            <img src="https://www.hsbc.com/-/files/hsbc/header/hsbc-logo-200x25.svg?h=25&la=en-GB&hash=EFB19274CD17649AE659D3351B595180"
+                style="width: 100px; height: 100px;" />
+            <strong>WorkSpace</strong>
+            <a href="login.html">
+                <button>Login</button>
+            </a>
+        </div>
+
+
+        <div class="hero_Section">
+            <h1>Create Meeting Room</h1>
+            <form id="meetingRoomForm" onsubmit=" return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="capacity">Seating Capacity:</label>
+                <input type="number" id="capacity" name="capacity" required><br><br>
+
+                <label>Amenities:</label><br>
+                <div class="amenitiesContainer">
+                    <div>
+                        <input type="checkbox" id="wifi" name="amenities" value="Wifi">
+                        <label for="wifi">Wifi</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="waterCooler" name="amenities" value="Water Cooler">
+                        <label for="waterCooler">Water Cooler</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ac" name="amenities" value="AC">
+                        <label for="ac">Air Conditioning</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="projector" name="amenities" value="projector">
+                        <label for="ac">Projector</label><br>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="cm" name="amenities" value="CoffeeMachine">
+                        <label for="ac">Coffee Machine</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Tv" name="amenities" value="Tv">
+                        <label for="ac">Television</label><br>
+                    </div>
+                        
+
+                </div>
+              
+                <br><br>
+                <div class="buttonContainer">
+                    <button type="button" onclick="cancelForm()">Cancel</button>
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+
+        </div>
+
+        
+
+
+        <script src="../JS/create.js"></script>
+</body>
+
+
+</html>
