@@ -1,5 +1,6 @@
 package com.hsbc.meetingroombookingsystem.service;
 
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
@@ -12,7 +13,7 @@ import com.hsbc.meetingroombookingsystem.exceptions.MeetingAlreadyExistsExceptio
 
 public interface NewMeetingService {
 	
-	public void newMeeting(int uniqueID,String title,User user,LocalDate meetingDate,LocalTime startTime,LocalTime endTime,Meeting typeOfMeeting,List<User> attendies,MeetingRoom meetingroom) throws MeetingAlreadyExistsException;
+	public void newMeeting(int uniqueID,String title,User user,LocalDate meetingDate,LocalTime startTime,LocalTime endTime,Meeting typeOfMeeting,List<User> attendies,MeetingRoom meetingroom) throws MeetingAlreadyExistsException, SQLException;
 
 	
 

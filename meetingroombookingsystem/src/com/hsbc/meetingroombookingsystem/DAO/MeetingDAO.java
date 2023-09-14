@@ -22,7 +22,7 @@ public class MeetingDAO {
 	    private static final String JDBC_PASSWORD = "Root";
 	    private static final String GET_ALL_MEETINGS_QUERY = "SELECT * FROM meetings";
 	    
-	    public MeetingDAO(){
+	    public MeetingDAO() throws SQLException{
 			Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
 	        PreparedStatement preparedStatement = connection.prepareStatement(GET_ALL_MEETINGS_QUERY);
 	       ResultSet resultSet = preparedStatement.executeQuery();
@@ -34,7 +34,7 @@ public class MeetingDAO {
 	           meeting.setStartTime((resultSet.getTime("start_time")).toLocalTime());
 	           meeting.setEndTime((resultSet.getTime("end_time")).toLocalTime());
 	           meeting.setUser(UserDAO.getUserByUserId(resultSet.getInt("user_id")));
-	           meeting.setTypeOfMeeting(decodemeetingtype(resultSet));
+	           meeting.setTypeOfMeeting(meeting.getTypeOfMeeting());
 	           meeting.setAttendies(decodeUsers(resultSet));
 	           meetings.add(meeting);
 	       }
@@ -49,7 +49,7 @@ public class MeetingDAO {
 		            preparedStatement.setDate(3, java.sql.Date.valueOf(newmeeting.getMeetingDate()));
 		            preparedStatement.setTime(4, java.sql.Time.valueOf(newmeeting.getStartTime()));
 		            preparedStatement.setTime(5, java.sql.Time.valueOf(newmeeting.getStartTime()));
-		            preparedStatement.setString(6, decodemeetingtype(newmeeting.getTypeOfMeeting()));
+		            preparedStatement.setLong(6, (newmeeting.getTypeOfMeeting()).getUniqueID());
 		            preparedStatement.setArray(7, (Array) newmeeting.getAttendies());
 
 		            preparedStatement.executeUpdate();
@@ -75,6 +75,20 @@ public class MeetingDAO {
 		return meetings;
 	}
 	
+	public static List<Meeting> getmeetingbyid(int id){
+		List<Meeting> foruser = new ArrayList();
+		for(Meeting m:meetings) {
+			List<User> attendies = new ArrayList();
+			attendies = m.getAttendies();
+			for(User k:attendies) {
+				if(k.getUniqueID()==id) {
+					foruser.add(m);
+				}
+			}
+		}
+		return foruser;
+	}
+	
 	public static List<User> decodeUsers(ResultSet resultset) throws SQLException{
 		List<User> attendies =new ArrayList();
 		Array array = resultset.getArray("userId");
@@ -84,11 +98,8 @@ public class MeetingDAO {
         }
 		return attendies;
 	}
-	
-	public static String decodemeetingtype(Meeting meeting) {
-		
 	}
 	
 
 
-}
+

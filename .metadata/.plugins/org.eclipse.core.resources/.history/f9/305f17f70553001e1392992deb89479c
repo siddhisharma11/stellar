@@ -1,0 +1,18 @@
+package com.hsbc.meetingroombookingsystem.controller;
+
+import com.hsbc.meetingroombookingsystem.DAO.MeetingRoomDAO;
+import com.hsbc.meetingroombookingsystem.DAO.UserDAO;
+import com.hsbc.meetingroombookingsystem.domain.User;
+import com.hsbc.meetingroombookingsystem.objectFactory.MeetingRoomDAOObject;
+
+public class NewMeetingControl {
+
+	public static void newmeeting(int id) {
+		User manager = UserDAO.getUserByUserId(id);
+		System.out.println("SELECT MEETING ROOM");
+		MeetingRoomDAO obj = MeetingRoomDAOObject.getInstanceOF();
+		System.out.println(obj.getall());
+		
+	}
+
+}

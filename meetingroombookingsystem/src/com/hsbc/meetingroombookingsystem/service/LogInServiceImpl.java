@@ -1,23 +1,25 @@
 package com.hsbc.meetingroombookingsystem.service;
 
+import java.sql.SQLException;
+
 import javax.security.auth.login.LoginException;
 
-import com.hsbc.meetingroombookingsystem.DAO.UserDAO;
-import com.hsbc.meetingroombookingsystem.domain.User;
+import com.hsbc.meetingroombookingsystem.DAO.LogInDAO;
+
 
 public class LogInServiceImpl implements LogInService{
 
 	@Override
-	public void logIn(String username, String password) throws LoginException {
+	public String logIn(String username, String password) throws LoginException, SQLException {
 		
-		User user = UserDAO.getUserByUserName(username, password);
+		String role=LogInDAO.LogIn(username, password);
 		
-		if(user == null) {
+		if(role == null) {
 			throw new LoginException("Username or Password Incorrect");
 		}
 		else
 			System.out.println("logged In Sucessfully !!!");
-		
+		return role;
 	}
 
 }

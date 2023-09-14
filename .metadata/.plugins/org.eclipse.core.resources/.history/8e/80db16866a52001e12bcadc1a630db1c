@@ -1,0 +1,24 @@
+package com.hsbc.meetingroombookingsystem.controller;
+
+import com.hsbc.meetingroombookingsystem.domain.Role;
+import com.hsbc.meetingroombookingsystem.service.CreateUserService;
+import com.hsbc.meetingroombookingsystem.service.CreateUserServiceImpl;
+
+public class NewUser {
+	CreateUserService obj =new CreateUserServiceImpl();
+	
+	public void newManager(String uniqueID, String name, String email, String phone, int credits, Role role) {
+		
+		obj.newManager(uniqueID, name, email, phone, credits, role);
+	}
+
+	public void newAdmin(String uniqueID, String name, String email, String phone) {
+		
+		obj.newAdmin(uniqueID, name, email, phone);
+	}
+
+	public void newMember(String id, String name, String email, String phone, Role role) {
+	
+		obj.newMember(id, name, email, phone, role);
+	}
+}

@@ -1,0 +1,33 @@
+package com.hsbc.meetingroombookingsystem.controller;
+
+import com.hsbc.meetingroombookingsystem.DAO.UserDAO;
+import com.hsbc.meetingroombookingsystem.domain.Admin;
+import com.hsbc.meetingroombookingsystem.domain.Manager;
+import com.hsbc.meetingroombookingsystem.domain.Members;
+import com.hsbc.meetingroombookingsystem.domain.Role;
+import com.hsbc.meetingroombookingsystem.domain.User;
+import com.hsbc.meetingroombookingsystem.objectFactory.UserDAOObject;
+import com.hsbc.meetingroombookingsystem.service.CreateUserService;
+import com.hsbc.meetingroombookingsystem.service.CreateUserServiceImpl;
+
+public class NewUser {
+	
+	public void newManager(String uniqueID, String name, String email, String phone, int credits, Role role) {
+		CreateUserService obj =new CreateUserServiceImpl();
+		obj.newManager(uniqueID, name, email, phone, credits, role);
+	}
+
+	public void newAdmin(String uniqueID, String name, String email, String phone) {
+		User newadmin = new Admin(uniqueID,name,email,phone);
+		UserDAO object = UserDAOObject.getInstanceOf();
+		object.addnewAdmin(newadmin);// TODO Auto-generated method stub
+		
+	}
+
+	public void newMember(String id, String name, String email, String phone, Role role) {
+		User newmember = new Members(id,name,email,phone, role);
+		UserDAO object = UserDAOObject.getInstanceOf();
+		object.addnewMember(newmember);// TODO Auto-generated method stub
+		
+	}
+}

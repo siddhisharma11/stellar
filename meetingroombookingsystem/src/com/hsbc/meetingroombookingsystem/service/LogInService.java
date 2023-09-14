@@ -1,9 +1,11 @@
 package com.hsbc.meetingroombookingsystem.service;
 
+import java.sql.SQLException;
+
 import javax.security.auth.login.LoginException;
 
 public interface LogInService {
 	
-	public void logIn(String username,String password) throws LoginException;
+	public String logIn(String username,String password) throws LoginException, SQLException;
 
 }

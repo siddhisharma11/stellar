@@ -1,0 +1,13 @@
+package com.hsbc.meetingroombookingsystem.controller;
+
+import com.hsbc.meetingroombookingsystem.service.CreateUserService;
+import com.hsbc.meetingroombookingsystem.service.CreateUserServiceImpl;
+
+public class NewUser {
+	
+	public void newUser() {
+		CreateUserService obj = new CreateUserServiceImpl();
+		
+	}
+
+}

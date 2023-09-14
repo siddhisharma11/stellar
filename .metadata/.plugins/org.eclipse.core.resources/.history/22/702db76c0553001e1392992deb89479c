@@ -1,0 +1,10 @@
+package com.hsbc.meetingroombookingsystem.controller;
+
+public class NewMeetingControl {
+
+	public static void newmeeting(int id) {
+		
+		
+	}
+
+}
