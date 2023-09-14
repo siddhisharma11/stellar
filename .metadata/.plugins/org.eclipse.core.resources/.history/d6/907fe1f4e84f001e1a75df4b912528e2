@@ -1,8 +1,0 @@
-package com.hsbc.meetingroombookingsystem.exceptions;
-
-public class UserAlreadyExistsException extends Exception {
-	public UserAlreadyExistsException(String message) {
-		System.out.println("User already Exists !!!");
-	}
-
-}

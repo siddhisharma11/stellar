@@ -1,7 +1,0 @@
-package com.hsbc.meetingroombookingsystem.domain;
-
-public class Role {
-	private String uniqueId;
-	private String name;
-
-}

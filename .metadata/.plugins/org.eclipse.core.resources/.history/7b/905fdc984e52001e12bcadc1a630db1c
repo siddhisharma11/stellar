@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module meetingroom {
-	requires java.sql;
-}

@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+E:\CodeFury\MeetingRoom\.metadata\.plugins\org.eclipse.jdt.core
-1231558234.index
-2301331999.index
-1865797976.index

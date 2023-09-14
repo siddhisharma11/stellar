@@ -1,5 +1,0 @@
-package com.hsbc.meetingroombookingsystem.domain;
-
-public abstract class User {
-
-}
